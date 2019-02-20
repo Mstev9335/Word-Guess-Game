@@ -9,7 +9,7 @@
                  var word=[];
                  var lengthWord;
                  var match;
-                 var chars;
+                 var chars=[];
 
                  //display
                  document.getElementById("wins").innerHTML = wins;
@@ -20,6 +20,8 @@
 
                 //function to have computer pick a letter at random
                 function compGuess(){
+                  
+    
                   word = computerChoice[Math.floor(Math.random() * computerChoice.length)];
                   
                   //console log to test
@@ -97,7 +99,9 @@
              if(pc===client){
               wins++;
               // display new wins
+              blank = [];
               document.getElementById("wins").innerHTML = wins;
+              document.getElementById("word").innerHTML = blank;
 
             
               // display guessed letters
