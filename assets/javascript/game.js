@@ -1,6 +1,6 @@
             
               //variables
-                var computerChoice = ["be", "the", "card" ]                
+                var computerChoice = ["be", "the", "card", "boolean", "computer", "javascript", "laptop" ]                
 
                  var wins = 0;
                  var blank = [];
@@ -48,9 +48,10 @@
               function setBlanks(){
               for(var i = 0; i<lengthWord; i++){
                 blank[i]="_";
+                document.getElementById("word").innerHTML = blank.join("  ");
               }
               // console.log(blank);
-              document.getElementById("word").innerHTML = blank;
+              // document.getElementById("word").innerHTML = blank;
             }
                setBlanks();
 
@@ -60,8 +61,6 @@
                 // Determines which key was pressed.
                 var userGuess = event.key;
                
-
-                
                 // determines if the letter the user guessed is in the word or not
                 if(word.indexOf(userGuess) !=-1){
                   console.log("letter is in word");
@@ -72,7 +71,8 @@
                     blank[i] = word[i];
                     }
                    }
-                   document.getElementById("word").innerHTML = blank;
+                  //  document.getElementById("word").innerHTML = blank;
+                   document.getElementById("word").innerHTML = blank.join("  ");
                   //  console.log(blank);
                 }
 
