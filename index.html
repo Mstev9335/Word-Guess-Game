@@ -4,13 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- Linking style.css -->
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <!-- Linking reset.css -->
-    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-    <title>Word Guess Game</title>
+    <!-- link reset.css sheet -->
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <!-- link style sheet -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Hangman Game</title>
 </head>
 <body>
-    
+  <h1>Hangman Game</h1>
+
+  <div class="container">
+    <h2>
+      Press any key to get started!
+    </h2>
+
+    <p>Wins: <span class="stat" id="wins">&nbsp;</span></p>
+
+    <p>Current Word: <span class="stat" id="word">&nbsp;</span></p>
+
+    <p>Guesses: <span class="stat" id="guesses">&nbsp;</span></p>
+
+    <p>Guessed: <span class="stat" id="guessed">&nbsp;</span></p>
+
+  </div>
+            
+              
+    <!-- link javascript -->
+  <script src="assets/javascript/game.js"></script>
 </body>
 </html>
