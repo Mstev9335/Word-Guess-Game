@@ -1,6 +1,7 @@
             
               //variables
-                var computerChoice = ["be", "the", "card", "boolean", "computer", "javascript", "laptop" ]                
+                var computerChoice = ["movie", "be", "card", "boolean", "computer", "javascript", "laptop",
+                                        "screen", "keyboard", "float" ]                
 
                  var wins = 0;
                  var blank = [];
@@ -48,6 +49,7 @@
               function setBlanks(){
               for(var i = 0; i<lengthWord; i++){
                 blank[i]="_";
+                
                 document.getElementById("word").innerHTML = blank.join("  ");
               }
               // console.log(blank);
@@ -119,15 +121,18 @@
                
 
                 if(guesses===0){
-
+                  blank = [];
                   compGuess();
                   wordLength();
+                  setBlanks();
                   guesses = 10;
                   // display new guesses
                   document.getElementById("guesses").innerHTML = guesses;
                    // display guessed letters
                    guessedLetters = [];
                 document.getElementById("guessed").innerHTML = guessedLetters;
+                
+                document.getElementById("word").innerHTML = blank.join("  ");
                 }
 
                 };          
