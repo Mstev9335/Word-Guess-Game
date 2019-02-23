@@ -4,6 +4,7 @@
                                         "screen", "keyboard", "float" ]                
 
                  var wins = 0;
+                 var losses = 0;
                  var blank = [];
                  var guesses = 10;
                  var guessedLetters = [];
@@ -14,6 +15,7 @@
 
                  //display
                  document.getElementById("wins").innerHTML = wins;
+                 document.getElementById("losses").innerHTML = losses;
                  document.getElementById("word").innerHTML = blank;
                  document.getElementById("guesses").innerHTML = guesses;
                  document.getElementById("guessed").innerHTML = guessedLetters;
@@ -125,9 +127,11 @@
                   compGuess();
                   wordLength();
                   setBlanks();
+                  losses++;
                   guesses = 10;
                   // display new guesses
                   document.getElementById("guesses").innerHTML = guesses;
+                  document.getElementById("losses").innerHTML = losses;
                    // display guessed letters
                    guessedLetters = [];
                 document.getElementById("guessed").innerHTML = guessedLetters;
