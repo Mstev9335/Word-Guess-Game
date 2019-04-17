@@ -6,6 +6,7 @@ the "guessed" section and the amount of guesses you get is reduced by one.  When
 the letters in the word or you run out of guesses the game restarts with a new word.
 
 ## Technologies used:
-HTML, CSS
+* HTML
+* CSS
 
 Link: https://mstev9335.github.io/Word-Guess-Game/
