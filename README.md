@@ -8,5 +8,6 @@ the letters in the word or you run out of guesses the game restarts with a new w
 ## Technologies used:
 * HTML
 * CSS
+* Javascript
 
 Link: https://mstev9335.github.io/Word-Guess-Game/
