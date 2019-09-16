@@ -10,4 +10,13 @@ the letters in the word or you run out of guesses the game restarts with a new w
 * CSS
 * Javascript
 
+### App starts
+![start](/assets/images/hang1.png)
+
+### After a few guesses
+![guess](/assets/images/hang2.png)
+
+### After a few wins/losses
+![games](/assets/images/hang3.png)
+
 Link: https://mstev9335.github.io/Word-Guess-Game/
