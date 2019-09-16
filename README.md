@@ -13,10 +13,10 @@ the letters in the word or you run out of guesses the game restarts with a new w
 ### App starts
 ![start](/assets/images/hang1.png)
 
-### After a few guesses
+### After the user has guessed a few letters
 ![guess](/assets/images/hang2.png)
 
-### After a few wins/losses
+### After the user has won and lost a few games
 ![games](/assets/images/hang3.png)
 
 Link: https://mstev9335.github.io/Word-Guess-Game/
