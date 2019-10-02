@@ -1,4 +1,4 @@
-//variables
+// variables
 var computerChoice = ["movie", "be", "card", "boolean", "computer", "javascript", "laptop",
   "screen", "keyboard", "float"]
 
@@ -12,7 +12,7 @@ var lengthWord;
 var match;
 var chars = [];
 
-//display
+// display
 document.getElementById("wins").innerHTML = wins;
 document.getElementById("losses").innerHTML = losses;
 document.getElementById("word").innerHTML = blank;
@@ -20,13 +20,13 @@ document.getElementById("guesses").innerHTML = guesses;
 document.getElementById("guessed").innerHTML = lettersGuessed;
 
 
-//function to have computer pick a letter at random
+// function to have computer pick a letter at random
 function compGuess() {
 
 
   word = computerChoice[Math.floor(Math.random() * computerChoice.length)];
 
-  //console log to test
+  // console log to test
   console.log(word);
   chars = word.split('');
   console.log(chars);
